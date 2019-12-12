@@ -2,7 +2,7 @@
 
 Project for ANU COMP4660/8420 (Bio-inspired Computing: Applications and Interfaces), Semester 1 2018.
 
-By Yuanbo Han, 2018-05-31.
+By Yuanbo Han, 2018-05-31. See the project report [here](Two-Approaches-to-Extract-Logical-Rules-for-Mushroom-Edibility--Neural-Networks-and-Genetic-Algorithm.pdf).
 
 ### Environment ###
 
@@ -31,12 +31,16 @@ Original source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/m
 - `GATree.py`
 - `load_data.py`
 
-### BP Neural Networks ###
+### BP Neural Network ###
+
+<img alt="Neural Network for Extracting Rules" src="bpNN.png" width="400">
 
 Run `bpNN.py`. It will read in the data, perform discretization, train a back-propagation neural network, and generate a file called "*net_weights*" which stores the weights in the model. To adjust parameters, see line 14\~26. To change the network structure, see line 29\~35.
 
 Run `displayWeight.py`. It will read "*net_weights*" file and print the network weights for attribute values.
 
 ### GA + Decision Tree ###
+
+<img alt="Decision Tree Selected by GA" src="tree5.png" width="450">
 
 Run `GATree.py`. It will read in the data, perform Genetic Algorithm for feature selection, and generate a "*tree.pdf*" which is the diagram of the final Decision Tree. Control parameters can be adjusted in line 6\~13.
